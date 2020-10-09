@@ -1,0 +1,17 @@
+@import "../../scss/variables";
+
+.card {
+	display: flex;
+	flex-direction: column;
+
+	width: 350px;
+	height: 400px;
+
+	&.primary {
+		background: $cardGradient;
+	}
+
+	&.secondary {
+		background: white;
+	}
+}

@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./styles.scss";
+
 export default function Card({ primary, title, price, items }) {
 	/*
     primary -> flag that changes coloring
@@ -9,7 +11,7 @@ export default function Card({ primary, title, price, items }) {
   */
 
 	return (
-		<div className={"card " + primary ? "primary" : "secondary"}>
+		<div className={primary ? "card primary" : "card secondary"}>
 			<h1>{title}</h1>
 			<h2>{price}</h2>
 
@@ -19,7 +21,7 @@ export default function Card({ primary, title, price, items }) {
 				})}
 			</ul>
 
-			<button className={"btn " + primary ? "primary" : "secondary"}>
+			<button className={primary ? "btn primary" : "btn secondary"}>
 				Learn More
 			</button>
 		</div>
