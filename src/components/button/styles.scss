@@ -1,0 +1,34 @@
+@import "../../scss/variables";
+
+.btn {
+	height: 40px;
+	width: 80%;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+
+	font-size: 11px;
+	border: none;
+	border-radius: 6px;
+
+	&.primary {
+		background: white;
+		color: hsl(237, 63%, 64%);
+
+		&:hover {
+			color: hsl(240, 78%, 98%);
+			background: none;
+			border: 1px solid hsl(240, 78%, 98%);
+		}
+	}
+
+	&.secondary {
+		background: $buttonGradient;
+		color: hsl(240, 78%, 98%);
+
+		&:hover {
+			color: hsl(237, 63%, 64%);
+			background: white;
+			border: 1px solid hsl(237, 53%, 62%);
+		}
+	}
+}

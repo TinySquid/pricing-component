@@ -1,5 +1,7 @@
 import React from "react";
 
+import Button from "../button/button";
+
 import "./styles.scss";
 
 export default function Card({ primary, title, price, items }) {
@@ -21,9 +23,7 @@ export default function Card({ primary, title, price, items }) {
 				})}
 			</ul>
 
-			<button className={primary ? "btn primary" : "btn secondary"}>
-				Learn More
-			</button>
+			<Button primary={primary}>Learn More</Button>
 		</div>
 	);
 }
