@@ -14,7 +14,9 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "@csstools/normalize.css": "^11.0.1",
     "gatsby": "^2.24.67",
+    "gatsby-plugin-react-helmet": "^3.3.13",
     "gatsby-plugin-sass": "^2.3.16",
     "node-sass": "^4.14.1",
     "react": "^16.12.0",

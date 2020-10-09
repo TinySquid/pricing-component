@@ -1,0 +1,12 @@
+/*
+	CSS Normalize by Jonathan Neal, https://github.com/csstools/normalize.css
+*/
+@import "~@csstools/normalize.css";
+
+// Font
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+
+* {
+	font-family: "Montserrat", sans-serif;
+	font-size: 15px;
+}
