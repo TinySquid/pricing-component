@@ -10,10 +10,12 @@
 	border: none;
 	border-radius: 6px;
 
+	// Modifiers
 	&.primary {
 		background: white;
 		color: hsl(237, 63%, 64%);
 
+		// States
 		&:hover {
 			cursor: pointer;
 			color: hsl(240, 78%, 98%);
@@ -26,6 +28,7 @@
 		background: $buttonGradient;
 		color: hsl(240, 78%, 98%);
 
+		// States
 		&:hover {
 			cursor: pointer;
 			color: hsl(237, 63%, 64%);

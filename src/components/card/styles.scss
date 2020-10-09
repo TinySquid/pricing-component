@@ -4,14 +4,90 @@
 	display: flex;
 	flex-direction: column;
 
-	width: 350px;
-	height: 400px;
+	align-items: center;
 
+	width: 330px;
+	height: 410px;
+
+	border-radius: 10px;
+
+	// Child element styles
+
+	// Card title
+	h1 {
+		margin: 55px 0 20px 0;
+
+		font-size: 18px;
+		letter-spacing: 0.5px;
+	}
+
+	// Price
+	h2 {
+		margin: 0;
+		font-size: 64px;
+
+		// Used to align currency symbol
+		display: flex;
+		align-items: center;
+
+		// Currency symbol
+		span {
+			font-size: 36px;
+		}
+	}
+
+	// Feature list
+	ul {
+		list-style-type: none;
+		text-align: center;
+
+		padding: 0;
+		margin: 25px 0;
+
+		width: 80%;
+
+		li {
+			padding: 15px 0;
+			border-top: 1px solid hsl(233, 55%, 77%);
+
+			&:last-child {
+				border-bottom: 1px solid hsl(233, 55%, 77%);
+			}
+		}
+	}
+
+	// Card Modifiers
 	&.primary {
+		height: 460px;
+
+		color: white;
 		background: $cardGradient;
+
+		box-shadow: 0 0 2px 1px rgba(40, 40, 40, 0.15);
 	}
 
 	&.secondary {
 		background: white;
+		color: rgb(80, 80, 80);
+
+		// imo everything is better with some box shadow sprinkled in
+		box-shadow: 0 0 2px 1px rgba(40, 40, 40, 0.15);
+
+		h1 {
+			margin: 30px 0 20px 0;
+		}
+
+		ul {
+			color: rgb(110, 110, 110);
+		}
+	}
+
+	// Change border depending on which side the card is on from the primary card
+	&.right {
+		border-radius: 0 10px 10px 0;
+	}
+
+	&.left {
+		border-radius: 10px 0 0 10px;
 	}
 }

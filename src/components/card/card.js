@@ -4,7 +4,7 @@ import Button from "../button/button";
 
 import "./styles.scss";
 
-export default function Card({ primary, title, price, items }) {
+export default function Card({ position, primary, title, price, items }) {
 	/*
     primary -> flag that changes coloring
     title -> plan title str
@@ -12,10 +12,34 @@ export default function Card({ primary, title, price, items }) {
     items -> plan features 
   */
 
+	// Determine what classes to add to the card based on props
+	let cardClass = "card ";
+
+	if (primary) {
+		cardClass += "primary";
+	} else {
+		cardClass += "secondary";
+	}
+
+	switch (position) {
+		case "left":
+			cardClass += " left";
+			break;
+		case "right":
+			cardClass += " right";
+			break;
+		default:
+			break;
+	}
+
 	return (
-		<div className={primary ? "card primary" : "card secondary"}>
+		<div className={cardClass}>
 			<h1>{title}</h1>
-			<h2>{price}</h2>
+
+			<h2>
+				<span>$</span>
+				{price}
+			</h2>
 
 			<ul>
 				{items.map((item) => {
