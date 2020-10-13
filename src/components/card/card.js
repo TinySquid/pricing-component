@@ -6,10 +6,11 @@ import "./styles.scss";
 
 export default function Card({ position, primary, title, price, items }) {
 	/*
-    primary -> flag that changes coloring
-    title -> plan title str
-    price -> plan price
-    items -> plan features 
+		position -> Removes border styling on right/left side if provided - str - left | right  
+    primary -> flag that changes coloring - bool
+    title -> plan title - str
+    price -> plan price - str
+    items -> plan features - array
   */
 
 	// Determine what classes to add to the card based on props
@@ -42,8 +43,8 @@ export default function Card({ position, primary, title, price, items }) {
 			</h2>
 
 			<ul>
-				{items.map((item) => {
-					return <li>{item}</li>;
+				{items.map((item, idx) => {
+					return <li key={idx}>{item}</li>;
 				})}
 			</ul>
 
