@@ -60,7 +60,7 @@
 	&.primary {
 		height: 460px;
 
-		color: white;
+		color: #ffffff;
 		background: $cardGradient;
 
 		box-shadow: 0 0 2px 1px rgba(40, 40, 40, 0.15);
@@ -68,17 +68,18 @@
 
 	&.secondary {
 		background: white;
-		color: rgb(80, 80, 80);
+		color: #47495e;
 
 		// imo everything is better with some box shadow sprinkled in
 		box-shadow: 0 0 2px 1px rgba(40, 40, 40, 0.15);
 
 		h1 {
 			margin: 30px 0 20px 0;
+			color: #66677c;
 		}
 
 		ul {
-			color: rgb(110, 110, 110);
+			color: #66677c;
 		}
 	}
 
