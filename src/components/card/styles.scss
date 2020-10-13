@@ -6,8 +6,8 @@
 
 	align-items: center;
 
-	width: 330px;
-	height: 410px;
+	width: 350px;
+	height: 455px;
 
 	border-radius: 10px;
 
@@ -15,7 +15,7 @@
 
 	// Card title
 	h1 {
-		margin: 55px 0 20px 0;
+		margin: 55px 0 25px 0;
 
 		font-size: 18px;
 		letter-spacing: 0.5px;
@@ -24,7 +24,7 @@
 	// Price
 	h2 {
 		margin: 0;
-		font-size: 64px;
+		font-size: 70px;
 
 		// Used to align currency symbol
 		display: flex;
@@ -32,7 +32,7 @@
 
 		// Currency symbol
 		span {
-			font-size: 36px;
+			font-size: 40px;
 			margin-right: 5px;
 		}
 	}
@@ -43,12 +43,12 @@
 		text-align: center;
 
 		padding: 0;
-		margin: 25px 0;
+		margin: 25px 0 30px 0;
 
 		width: 80%;
 
 		li {
-			padding: 15px 0;
+			padding: 18px 0;
 			border-top: 1px solid #a7acfd;
 
 			&:last-child {
@@ -59,7 +59,10 @@
 
 	// Card Modifiers
 	&.primary {
-		height: 460px;
+		// Will draw primary card over secondary card box shadow effect
+		z-index: 1;
+
+		height: 500px;
 
 		color: #ffffff;
 		background: $cardGradient;
@@ -71,8 +74,7 @@
 		background: white;
 		color: #47495e;
 
-		// imo everything is better with some box shadow sprinkled in
-		box-shadow: 0 0 2px 1px rgba(40, 40, 40, 0.15);
+		box-shadow: 1px 15px 35px 1px rgba(53, 57, 78, 0.1);
 
 		h1 {
 			margin: 30px 0 20px 0;
