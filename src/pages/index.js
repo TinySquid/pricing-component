@@ -6,6 +6,7 @@ import Layout from "../components/layout/layout";
 
 // Components
 import Pricing from "../components/pricing/pricing";
+import Footer from "../components/footer/footer";
 
 // Container style to align cards
 import "../scss/pages/home.scss";
@@ -17,6 +18,7 @@ export default function Home() {
 			<Layout>
 				<div className="container">
 					<Pricing />
+					<Footer />
 				</div>
 			</Layout>
 		</>
