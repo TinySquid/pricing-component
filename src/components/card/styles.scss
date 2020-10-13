@@ -49,10 +49,10 @@
 
 		li {
 			padding: 15px 0;
-			border-top: 1px solid hsl(233, 55%, 77%);
+			border-top: 1px solid #a7acfd;
 
 			&:last-child {
-				border-bottom: 1px solid hsl(233, 55%, 77%);
+				border-bottom: 1px solid #a7acfd;
 			}
 		}
 	}
@@ -76,11 +76,19 @@
 
 		h1 {
 			margin: 30px 0 20px 0;
-			color: #66677c;
+			color: #75778c;
 		}
 
 		ul {
-			color: #66677c;
+			color: #75778c;
+
+			li {
+				border-top: 1px solid #dbdbdb;
+
+				&:last-child {
+					border-bottom: 1px solid #dbdbdb;
+				}
+			}
 		}
 	}
 
