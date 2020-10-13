@@ -1,0 +1,19 @@
+.pricing {
+	// component parent
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.price-header {
+	color: #6c708b;
+	margin: 50px auto;
+}
+
+.card-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	margin: 60px auto;
+}
