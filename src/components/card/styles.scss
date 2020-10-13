@@ -6,10 +6,27 @@
 
 	align-items: center;
 
-	width: 350px;
+	width: 100%;
+
+	// Preferred width
+	max-width: 350px;
+
+	// Min before reaching a breakpoint
+	min-width: 325px;
+
 	height: 455px;
 
 	border-radius: 10px;
+
+	// Breakpoints
+	@media (max-width: 925px) {
+		margin: 15px auto;
+	}
+
+	// Make side gutters bigger on mobile
+	@media (max-width: 400px) {
+		max-width: 325px;
+	}
 
 	// Child element styles
 
@@ -71,8 +88,11 @@
 	}
 
 	&.secondary {
-		background: white;
+		// Secondaries smaller than primary
+		min-width: 290px;
+
 		color: #47495e;
+		background: white;
 
 		box-shadow: 1px 15px 35px 1px rgba(53, 57, 78, 0.1);
 
