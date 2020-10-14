@@ -32,7 +32,7 @@
 
 	// Card title
 	h1 {
-		margin: 55px 0 25px 0;
+		margin: 53px 0 20px 0;
 
 		font-size: 18px;
 		letter-spacing: 0.5px;
@@ -85,6 +85,14 @@
 		background: $cardGradient;
 
 		box-shadow: 0 0 2px 1px rgba(40, 40, 40, 0.15);
+
+		@media (max-width: 925px) {
+			height: 455px;
+
+			h1 {
+				margin: 30px 0 20px 0;
+			}
+		}
 	}
 
 	&.secondary {
