@@ -1,0 +1,53 @@
+//* PAGE VARIABLES *//
+$pricing-text--light: #6c708b;
+$pricing-background--light: #1d1d86;
+
+//* SLIDER VARIABLES *//
+$slider-text--light: #b1b1bb;
+$slider-toggle--light: #ffffff;
+$slider-background--light: linear-gradient(
+	to bottom right,
+	hsl(236, 72%, 79%),
+	hsl(237, 63%, 64%)
+);
+
+//* CARD VARIABLES *//
+$card-title--light: #ffffff;
+$card-pricing--light: #ffffff;
+$card-features--light: #ffffff;
+
+$card-shadow--light: 0 0 2px 1px rgba(40, 40, 40, 0.15);
+$card-list-borders--light: 1px solid #a7acfd;
+$card-background--light: linear-gradient(
+	to bottom right,
+	hsl(236, 72%, 79%),
+	hsl(237, 63%, 64%)
+);
+
+//* CARD SECONDARY *//
+$card-title-secondary--light: #47495e;
+$card-pricing-secondary--light: #75778c;
+$card-features-secondary--light: #75778c;
+
+$card-shadow-secondary--light: 1px 15px 35px 1px rgba(53, 57, 78, 0.1);
+$card-list-borders-secondary--light: 1px solid #dbdbdb;
+$card-background-secondary--light: #ffffff;
+
+//* BUTTON VARIABLES *//
+$button-text--light: hsl(237, 63%, 64%);
+$button-background--light: #ffffff;
+$button-borders--light: none;
+$button-hover-color--light: hsl(240, 78%, 98%);
+$button-hover-background--light: 1px solid hsl(240, 78%, 98%);
+
+//* BUTTON SECONDARY *//
+$button-text-secondary--light: hsl(240, 78%, 98%);
+$button-background-secondary--light: linear-gradient(
+	to right,
+	hsl(236, 72%, 79%),
+	hsl(237, 63%, 64%)
+);
+
+$button-borders-secondary--light: none;
+$button-hover-color-secondary--light: hsl(237, 63%, 64%);
+$button-hover-background-secondary--light: #ffffff;

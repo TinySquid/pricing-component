@@ -1,0 +1,53 @@
+//* PAGE VARIABLES *//
+$pricing-text--dark: #6c708b;
+$pricing-background--dark: #202020;
+
+//* SLIDER VARIABLES *//
+$slider-text--dark: #b1b1bb;
+$slider-toggle--dark: #ffffff;
+$slider-background--dark: linear-gradient(
+	to bottom right,
+	hsl(236, 72%, 79%),
+	hsl(237, 63%, 64%)
+);
+
+//* CARD VARIABLES *//
+$card-title--dark: #ffffff;
+$card-pricing--dark: #ffffff;
+$card-features--dark: #ffffff;
+
+$card-shadow--dark: 0 0 2px 1px rgba(40, 40, 40, 0.15);
+$card-list-borders--dark: 1px solid #a7acfd;
+$card-background--dark: linear-gradient(
+	to bottom right,
+	hsl(236, 72%, 79%),
+	hsl(237, 63%, 64%)
+);
+
+//* CARD SECONDARY *//
+$card-title-secondary--dark: #47495e;
+$card-pricing-secondary--dark: #75778c;
+$card-features-secondary--dark: #75778c;
+
+$card-shadow-secondary--dark: 1px 15px 35px 1px rgba(53, 57, 78, 0.1);
+$card-list-borders-secondary--dark: 1px solid #dbdbdb;
+$card-background-secondary--dark: #ffffff;
+
+//* BUTTON VARIABLES *//
+$button-text--dark: hsl(237, 63%, 64%);
+$button-background--dark: #ffffff;
+$button-borders--dark: none;
+$button-hover-color--dark: hsl(240, 78%, 98%);
+$button-hover-background--dark: 1px solid hsl(240, 78%, 98%);
+
+//* BUTTON SECONDARY *//
+$button-text-secondary--dark: hsl(240, 78%, 98%);
+$button-background-secondary--dark: linear-gradient(
+	to right,
+	hsl(236, 72%, 79%),
+	hsl(237, 63%, 64%)
+);
+
+$button-borders-secondary--dark: none;
+$button-hover-color-secondary--dark: hsl(237, 63%, 64%);
+$button-hover-background-secondary--dark: #ffffff;

@@ -1,0 +1,98 @@
+@import "./t-light";
+@import "./t-dark";
+
+$themes: (
+	default: (
+		// Page styles
+		pricing-text: $pricing-text--light,
+		pricing-background: $pricing-background--light,
+		// Slider styles
+		slider-text: $slider-text--light,
+		slider-toggle: $slider-toggle--light,
+		slider-background: $slider-background--light,
+		// Primary card styles
+		card-title: $card-title--light,
+		// card-pricing: $card-pricing--light,
+		// card-features: $card-features--light,
+		card-shadow: $card-shadow--light,
+		card-list-borders: $card-list-borders--light,
+		card-background: $card-background--light,
+		// Secondary card styles
+		card-title-secondary: $card-title-secondary--light,
+		card-pricing-secondary: $card-pricing-secondary--light,
+		card-features-secondary: $card-features-secondary--light,
+		card-shadow-secondary: $card-shadow-secondary--light,
+		card-list-borders-secondary: $card-list-borders-secondary--light,
+		card-background-secondary: $card-background-secondary--light,
+		// Button styles
+		button-text: $button-text--light,
+		button-background: $button-background--light,
+		button-borders: $button-borders--light,
+		button-hover-color: $button-hover-color--light,
+		button-hover-background: $button-hover-background--light,
+		// Secondary button styles
+		button-text-secondary: $button-text-secondary--light,
+		button-background-secondary: $button-background-secondary--light,
+		button-borders-secondary: $button-borders-secondary--light,
+		button-hover-color-secondary: $button-hover-color-secondary--light,
+		button-hover-background-secondary: $button-hover-background-secondary--light,
+	),
+	dark: (
+		// Page styles
+		pricing-text: $pricing-text--dark,
+		pricing-background: $pricing-background--dark,
+		// Slider styles
+		slider-text: $slider-text--dark,
+		slider-toggle: $slider-toggle--dark,
+		slider-background: $slider-background--dark,
+		// Primary card styles
+		card-title: $card-title--dark,
+		// card-pricing: $card-pricing--dark,
+		// card-features: $card-features--dark,
+		card-shadow: $card-shadow--dark,
+		card-list-borders: $card-list-borders--dark,
+		card-background: $card-background--dark,
+		// Secondary card styles
+		card-title-secondary: $card-title-secondary--dark,
+		card-pricing-secondary: $card-pricing-secondary--dark,
+		card-features-secondary: $card-features-secondary--dark,
+		card-shadow-secondary: $card-shadow-secondary--dark,
+		card-list-borders-secondary: $card-list-borders-secondary--dark,
+		card-background-secondary: $card-background-secondary--dark,
+		// Button styles
+		button-text: $button-text--dark,
+		button-background: $button-background--dark,
+		button-borders: $button-borders--dark,
+		button-hover-color: $button-hover-color--dark,
+		button-hover-background: $button-hover-background--dark,
+		// Secondary button styles
+		button-text-secondary: $button-text-secondary--dark,
+		button-background-secondary: $button-background-secondary--dark,
+		button-borders-secondary: $button-borders-secondary--dark,
+		button-hover-color-secondary: $button-hover-color-secondary--dark,
+		button-hover-background-secondary: $button-hover-background-secondary--dark,
+	),
+);
+
+@mixin themify() {
+	@each $theme, $map in $themes {
+		.theme--#{$theme} & {
+			$theme-map: () !global;
+			@each $key, $submap in $map {
+				$value: map-get(map-get($themes, $theme), "#{$key}");
+				$theme-map: map-merge(
+					$theme-map,
+					(
+						$key: $value,
+					)
+				) !global;
+			}
+			@content;
+			$theme-map: null !global;
+		}
+	}
+}
+
+@function t($key) {
+	@return map-get($theme-map, $key);
+}

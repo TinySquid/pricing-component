@@ -1,11 +1,14 @@
-@import "../../scss/variables";
+@import "../../scss/themes/color-themes";
 
 .slider {
 	// component parent div
 	display: flex;
 	align-items: center;
 
-	color: #b1b1bb;
+	@include themify() {
+		color: t("slider-text");
+	}
+	// color: #1313ec;
 }
 
 .slider-text {
@@ -38,7 +41,9 @@
 	right: 0;
 	bottom: 0;
 
-	background: $buttonGradient;
+	@include themify() {
+		background: t("slider-background");
+	}
 
 	border-radius: 34px;
 }
@@ -53,7 +58,10 @@
 	left: 4px;
 	bottom: 4px;
 
-	background-color: white;
+	@include themify() {
+		background: t("slider-toggle");
+	}
+
 	transition: 0.2s;
 
 	border-radius: 50%;

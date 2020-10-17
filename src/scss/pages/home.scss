@@ -1,5 +1,18 @@
+@import "../themes/color-themes";
+
+html,
+body {
+	@include themify() {
+		background-color: t("card-background");
+	}
+}
+
 .container {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	justify-content: space-between;
+
+	min-height: 96vh;
+
+	width: 100%;
 }

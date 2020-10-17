@@ -1,4 +1,4 @@
-@import "../../scss/variables";
+@import "../../scss/themes/color-themes";
 
 .btn {
 	height: 45px;
@@ -12,28 +12,38 @@
 
 	// Modifiers
 	&.primary {
-		background: white;
-		color: hsl(237, 63%, 64%);
+		@include themify() {
+			color: t("button-text");
+			background: t("button-background");
+		}
 
 		// States
 		&:hover {
 			cursor: pointer;
-			color: hsl(240, 78%, 98%);
-			background: none;
-			border: 1px solid hsl(240, 78%, 98%);
+
+			@include themify() {
+				color: t("button-hover-color");
+				background: t("button-hover-background");
+				border: t("button-borders");
+			}
 		}
 	}
 
 	&.secondary {
-		background: $buttonGradient;
-		color: hsl(240, 78%, 98%);
+		@include themify() {
+			color: t("button-text-secondary");
+			background: t("button-background-secondary");
+		}
 
 		// States
 		&:hover {
 			cursor: pointer;
-			color: hsl(237, 63%, 64%);
-			background: white;
-			border: 1px solid hsl(237, 53%, 62%);
+
+			@include themify() {
+				color: t("button-hover-color-secondary");
+				background: t("button-hover-background-secondary");
+				border: t("button-borders-secondary");
+			}
 		}
 	}
 }

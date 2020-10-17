@@ -1,4 +1,4 @@
-@import "../../scss/variables";
+@import "../../scss/themes/color-themes";
 
 .card {
 	display: flex;
@@ -66,10 +66,15 @@
 
 		li {
 			padding: 18px 0;
-			border-top: 1px solid #a7acfd;
+
+			@include themify() {
+				border-top: t("card-list-borders");
+			}
 
 			&:last-child {
-				border-bottom: 1px solid #a7acfd;
+				@include themify() {
+					border-bottom: t("card-list-borders");
+				}
 			}
 		}
 	}
@@ -81,10 +86,11 @@
 
 		height: 500px;
 
-		color: #ffffff;
-		background: $cardGradient;
-
-		box-shadow: 0 0 2px 1px rgba(40, 40, 40, 0.15);
+		@include themify() {
+			color: t("card-title");
+			background: t("card-background");
+			box-shadow: t("card-shadow");
+		}
 
 		@media (max-width: 925px) {
 			height: 455px;
@@ -99,24 +105,34 @@
 		// Secondaries smaller than primary
 		min-width: 290px;
 
-		color: #47495e;
-		background: white;
-
-		box-shadow: 1px 15px 35px 1px rgba(53, 57, 78, 0.1);
+		@include themify() {
+			color: t("card-title-secondary");
+			background: t("card-background-secondary");
+			box-shadow: t("card-shadow-secondary");
+		}
 
 		h1 {
 			margin: 30px 0 20px 0;
-			color: #75778c;
+
+			@include themify() {
+				color: t("card-pricing-secondary");
+			}
 		}
 
 		ul {
-			color: #75778c;
+			@include themify() {
+				color: t("card-features-secondary");
+			}
 
 			li {
-				border-top: 1px solid #dbdbdb;
+				@include themify() {
+					border-top: t("card-list-borders-secondary");
+				}
 
 				&:last-child {
-					border-bottom: 1px solid #dbdbdb;
+					@include themify() {
+						border-bottom: t("card-list-borders-secondary");
+					}
 				}
 			}
 		}
