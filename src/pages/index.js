@@ -19,8 +19,8 @@ export default function Home() {
 		<div className="theme--default" ref={rootNode}>
 			<SEO />
 			<Layout>
-				<ThemeSwitcher rootRef={rootNode} />
 				<div className="container">
+					<ThemeSwitcher rootRef={rootNode} />
 					<Pricing />
 					<Footer />
 				</div>

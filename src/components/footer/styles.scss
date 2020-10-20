@@ -1,7 +1,14 @@
 @import "../../scss//themes/color-themes";
 
 .footer {
-	margin: 35px auto;
+	padding: 35px;
+	text-align: center;
+
+	span {
+		@include themify() {
+			color: t("footer-link-color");
+		}
+	}
 
 	a {
 		@include themify() {
