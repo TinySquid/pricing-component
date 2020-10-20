@@ -1,8 +1,13 @@
+@import "../../scss//themes/color-themes";
+
 .footer {
 	margin: 35px auto;
 
 	a {
-		color: #47495e;
+		@include themify() {
+			color: t("footer-link-color");
+		}
+
 		font-size: 16px;
 
 		margin: 0 8px;
@@ -11,12 +16,17 @@
 		text-decoration: none;
 
 		&:hover {
-			color: #0b0b0f;
+			@include themify() {
+				color: t("footer-link-hover");
+			}
+
 			text-decoration: underline;
 		}
 
 		&:active {
-			color: #47495e;
+			@include themify() {
+				color: t("footer-link-color");
+			}
 		}
 	}
 }

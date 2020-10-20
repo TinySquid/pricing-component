@@ -36,6 +36,9 @@ $themes: (
 		button-borders-secondary: $button-borders-secondary--light,
 		button-hover-color-secondary: $button-hover-color-secondary--light,
 		button-hover-background-secondary: $button-hover-background-secondary--light,
+		// Footer
+		footer-link-color: $footer-link-color--light,
+		footer-link-hover: $footer-link-hover--light,
 	),
 	dark: (
 		// Page styles
@@ -71,6 +74,9 @@ $themes: (
 		button-borders-secondary: $button-borders-secondary--dark,
 		button-hover-color-secondary: $button-hover-color-secondary--dark,
 		button-hover-background-secondary: $button-hover-background-secondary--dark,
+		// Footer
+		footer-link-color: $footer-link-color--dark,
+		footer-link-hover: $footer-link-hover--dark,
 	),
 );
 
