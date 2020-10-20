@@ -13,7 +13,7 @@ import "../scss/pages/home.scss";
 
 export default function Home() {
 	return (
-		<>
+		<div className="theme--default">
 			<SEO />
 			<Layout>
 				<div className="container">
@@ -21,6 +21,6 @@ export default function Home() {
 					<Footer />
 				</div>
 			</Layout>
-		</>
+		</div>
 	);
 }

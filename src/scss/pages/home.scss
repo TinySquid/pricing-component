@@ -1,18 +1,15 @@
 @import "../themes/color-themes";
 
-html,
-body {
-	@include themify() {
-		background-color: t("card-background");
-	}
-}
-
 .container {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 
-	min-height: 96vh;
+	min-height: 100vh;
 
 	width: 100%;
+
+	@include themify() {
+		background-color: t("pricing-background");
+	}
 }
