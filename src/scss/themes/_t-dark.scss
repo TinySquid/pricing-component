@@ -1,57 +1,63 @@
 //* PAGE VARIABLES *//
-$pricing-text--dark: #6c708b;
+$pricing-text--dark: #ede4d8;
 $pricing-background--dark: #202020;
 
 //* SLIDER VARIABLES *//
-$slider-text--dark: #b1b1bb;
-$slider-toggle--dark: #ffffff;
+$slider-text--dark: #ede4d8;
+$slider-toggle--dark: #ede4d8;
 $slider-background--dark: linear-gradient(
 	to bottom right,
-	hsl(236, 72%, 79%),
-	hsl(237, 63%, 64%)
+	rgba(163, 168, 240, 0.6),
+	rgba(105, 111, 221, 0.6)
 );
 
 //* CARD VARIABLES *//
-$card-title--dark: #ffffff;
-$card-pricing--dark: #ffffff;
+$card-title--dark: #e7dfd2;
+$card-pricing--dark: #e7dfd2;
 $card-features--dark: #ffffff;
 
-$card-shadow--dark: 0 0 2px 1px rgba(40, 40, 40, 0.15);
-$card-list-borders--dark: 1px solid #a7acfd;
+$card-shadow--dark: 0 2px 2px 3px rgba(32, 32, 32, 0.5);
+$card-list-borders--dark: 1px solid #8386c7;
 $card-background--dark: linear-gradient(
 	to bottom right,
-	hsl(236, 72%, 79%),
-	hsl(237, 63%, 64%)
+	rgba(163, 168, 240, 0.6),
+	rgba(105, 111, 221, 0.6)
 );
 
 //* CARD SECONDARY *//
-$card-title-secondary--dark: #47495e;
-$card-pricing-secondary--dark: #75778c;
-$card-features-secondary--dark: #75778c;
+$card-title-secondary--dark: #e7dfd2;
+$card-pricing-secondary--dark: #e7dfd2;
+$card-features-secondary--dark: #e7dfd2;
 
-$card-shadow-secondary--dark: 1px 15px 35px 1px rgba(53, 57, 78, 0.1);
-$card-list-borders-secondary--dark: 1px solid #dbdbdb;
-$card-background-secondary--dark: #ffffff;
+$card-shadow-secondary--dark: 1px 5px 12px 5px rgba(10, 10, 10, 0.35);
+$card-list-borders-secondary--dark: 1px solid #4e5558;
+$card-background-secondary--dark: rgba(37, 37, 37, 0.5);
 
 //* BUTTON VARIABLES *//
-$button-text--dark: hsl(237, 63%, 64%);
-$button-background--dark: #ffffff;
+$button-text--dark: #595ebb;
+$button-background--dark: #dadce7;
 $button-borders--dark: none;
-$button-hover-color--dark: hsl(240, 78%, 98%);
-$button-hover-background--dark: 1px solid hsl(240, 78%, 98%);
+$button-hover-color--dark: #595ebb;
+$button-hover-background--dark: #c8c9d4;
 
 //* BUTTON SECONDARY *//
-$button-text-secondary--dark: hsl(240, 78%, 98%);
+$button-text-secondary--dark: #f6f6fe;
 $button-background-secondary--dark: linear-gradient(
 	to right,
-	hsl(236, 72%, 79%),
-	hsl(237, 63%, 64%)
+	rgba(163, 168, 240, 0.6),
+	rgba(105, 111, 221, 0.6)
 );
 
 $button-borders-secondary--dark: none;
-$button-hover-color-secondary--dark: hsl(237, 63%, 64%);
-$button-hover-background-secondary--dark: #ffffff;
+$button-hover-color-secondary--dark: #e2e2e2;
+$button-hover-background-secondary--dark: linear-gradient(
+	to right,
+	rgba(136, 141, 204, 0.6),
+	rgba(79, 83, 168, 0.6)
+);
 
 //* FOOTER *//
-$footer-link-color--dark: #47495e;
-$footer-link-hover--dark: #0b0b0f;
+$footer-link-color--dark: #f3eadd;
+$footer-link-hover--dark: #ccc5bb;
+
+$theme-slider-icon-color--dark: white;

@@ -1,0 +1,83 @@
+@import "../../scss/themes/color-themes";
+
+.t-slider {
+	// component parent div
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 15px 25px;
+
+	@include themify() {
+		background-color: t("pricing-background");
+	}
+}
+
+.t-slider-icon {
+	@include themify() {
+		color: t("theme-slider-icon-color");
+	}
+
+	margin-right: 10px;
+
+	svg {
+		width: 25px;
+		height: 25px;
+	}
+}
+
+.t-container {
+	// switch element
+	position: relative;
+	display: inline-block;
+
+	width: 45px;
+	height: 25px;
+}
+
+.t-container input {
+	// hide actual control
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.t-switch {
+	// switch position & underneath background color
+	position: absolute;
+	cursor: pointer;
+
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+	@include themify() {
+		background: t("slider-background");
+	}
+
+	border-radius: 34px;
+}
+
+.t-switch:before {
+	// switch toggle bit
+	position: absolute;
+	content: "";
+
+	height: 16px;
+	width: 16px;
+	left: 4px;
+	bottom: 4px;
+
+	@include themify() {
+		background: t("slider-toggle");
+	}
+
+	transition: 0.2s;
+
+	border-radius: 50%;
+}
+
+input:checked + .t-switch:before {
+	// Moves the toggle
+	transform: translateX(20px);
+}
