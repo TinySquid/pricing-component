@@ -14,7 +14,7 @@
 		color: t("pricing-text");
 	}
 
-	margin: 50px auto;
+	margin: 35px 0 50px 0;
 }
 
 .card-container {
@@ -24,7 +24,7 @@
 	justify-content: center;
 	align-items: center;
 
-	margin: 60px auto;
+	margin: 60px;
 
 	@media (max-width: 925px) {
 		// Stack cards

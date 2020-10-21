@@ -20,8 +20,10 @@ export default function Home() {
 			<SEO />
 			<Layout>
 				<div className="container">
-					<ThemeSwitcher rootRef={rootNode} />
-					<Pricing />
+					<div>
+						<ThemeSwitcher rootRef={rootNode} />
+						<Pricing />
+					</div>
 					<Footer />
 				</div>
 			</Layout>
