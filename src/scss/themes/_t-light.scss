@@ -34,23 +34,23 @@ $card-list-borders-secondary--light: 1px solid #dbdbdb;
 $card-background-secondary--light: #ffffff;
 
 //* BUTTON VARIABLES *//
-$button-text--light: hsl(237, 63%, 64%);
+$button-text--light: #696fdd;
 $button-background--light: #ffffff;
-$button-borders--light: none;
-$button-hover-color--light: hsl(240, 78%, 98%);
-$button-hover-background--light: 1px solid hsl(240, 78%, 98%);
+$button-borders--light: 1px solid #ffffff;
+$button-hover-color--light: #ffffff;
+$button-hover-background--light: none;
 
 //* BUTTON SECONDARY *//
-$button-text-secondary--light: hsl(240, 78%, 98%);
+$button-text-secondary--light: #f6f6fe;
 $button-background-secondary--light: linear-gradient(
 	to right,
 	hsl(236, 72%, 79%),
 	hsl(237, 63%, 64%)
 );
 
-$button-borders-secondary--light: none;
-$button-hover-color-secondary--light: hsl(237, 63%, 64%);
-$button-hover-background-secondary--light: #ffffff;
+$button-borders-secondary--light: 1px solid #696fdd;
+$button-hover-color-secondary--light: #696fdd;
+$button-hover-background-secondary--light: none;
 
 //* FOOTER *//
 $footer-link-color--light: #47495e;

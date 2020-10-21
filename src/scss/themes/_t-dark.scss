@@ -36,9 +36,9 @@ $card-background-secondary--dark: rgba(37, 37, 37, 0.5);
 //* BUTTON VARIABLES *//
 $button-text--dark: #595ebb;
 $button-background--dark: #dadce7;
-$button-borders--dark: none;
-$button-hover-color--dark: #595ebb;
-$button-hover-background--dark: #c8c9d4;
+$button-borders--dark: 1px solid #ffffff;
+$button-hover-color--dark: #ffffff;
+$button-hover-background--dark: none;
 
 //* BUTTON SECONDARY *//
 $button-text-secondary--dark: #f6f6fe;
@@ -48,13 +48,9 @@ $button-background-secondary--dark: linear-gradient(
 	rgba(105, 111, 221, 0.6)
 );
 
-$button-borders-secondary--dark: none;
-$button-hover-color-secondary--dark: #e2e2e2;
-$button-hover-background-secondary--dark: linear-gradient(
-	to right,
-	rgba(136, 141, 204, 0.6),
-	rgba(79, 83, 168, 0.6)
-);
+$button-borders-secondary--dark: 1px solid #696fdd;
+$button-hover-color-secondary--dark: #7d84ff;
+$button-hover-background-secondary--dark: none;
 
 //* FOOTER *//
 $footer-link-color--dark: #f3eadd;
