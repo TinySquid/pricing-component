@@ -1,4 +1,4 @@
-# Pricing Component Challenge
+# Pricing Component
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/42075bef-2359-4b1a-a385-06d203f6fd4e/deploy-status)](https://app.netlify.com/sites/ts-pricing-component/deploys)
 
@@ -29,6 +29,8 @@ Gatsby is essentially react (and graphql!) with a heavy focus on "performance, s
 One of the interesting things I came across here was using graphql to query the site meta info defined in the `gatsby-config`. It seems commonplace to create an SEO component to manage setting page title/description and other meta tags - something I haven't really done with react-helmet before this but I know it's more common with PWAs.
 
 Overall, it took me about an hour to understand the basic configuration settings and getting set up in a boilerplate Gatsby project. I will 100% be using Gatsby again, hopefully on a more complex project in the future.
+
+Additionally, I've added theme support with sass and included a dark mode toggle on the page.
 
 ## Site screenshots
 
