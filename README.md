@@ -32,17 +32,20 @@ Overall, it took me about an hour to understand the basic configuration settings
 
 Additionally, I've added theme support with sass and included a dark mode toggle on the page.
 
-## Site screenshots
+## Showcase Screenshots
 
-### _Desktop_
+## _Desktop_
 
-![Desktop view](./docs/img/desktop-view.png)
+![Desktop view](./assets/desktop-view.png)
 
-![Desktop view active](./docs/img/desktop-view-active.png)
+![Desktop view dark mode](./assets/desktop-view-dark.png)
 
-### _Mobile_
+![Desktop view active](./assets/desktop-view-active.png)
 
-![Mobile view](./docs/img/mobile-view.png)
+## _Mobile_
+
+![Mobile view](./assets/mobile-view.png)
+![Mobile view dark](./assets/mobile-view-dark.png)
 
 ### Original Challenge
 
